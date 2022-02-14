@@ -17,9 +17,8 @@ public class Main {
         for (int i = a; i <= b; i++) {
             sum += i;
             count++;
-            for (int j = a; j <= b; j++)
-                if (j % 2 == 0) {
-                    sum1 += j;
+                if (i % 2 == 0) {
+                    sum1 += i;
                     count1++;
                 }
         }
