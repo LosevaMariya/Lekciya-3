@@ -2,14 +2,16 @@ public class LoopFor {
 
     public static void main(String[] args) {
 
-         for (k = 100, isMultipleFour(boolean k) = true, k--){
-             int multiplicityFour = isMultipleFour(boolean k);
-//        if (a = isMultipleFour(int k)){
-                System.out.print("Числа, кратные 4: " + multiplicityFour);
+        System.out.print("Числа, кратные 4: ");
+        for (int i = 100; i > 1; i--) {
+            boolean multiplicityFour = isMultipleFour(i);
+            if (isMultipleFour(i)) {
+                System.out.print(i + ", ");
             }
         }
-//    }
-    public static boolean isMultipleFour(int k){
-        return for(k = 100; k % 4 == 0; k--);
+    }
+
+    public static boolean isMultipleFour(int i) {
+        return i % 4 == 0;
     }
 }
