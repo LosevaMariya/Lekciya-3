@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class digitsOfNumber {
+public class DigitsOfNumber {
 
     public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class digitsOfNumber {
         int sum1 = 0;
         int max = 0;
 
-        for (int n = a; n != 0; n /= 10) {
+        for (int n = a; n > 0; n /= 10) {
             sum += (n % 10);
             if (n % 2 != 0) {
                 sum1 += (n % 10);
@@ -19,6 +19,9 @@ public class digitsOfNumber {
             if (max < (n % 10)) {
                 max = (n % 10);
             }
+//            else {
+//                System.out.println("Введёное число должно быть положительным ");
+//            }
         }
         System.out.println("Сумма цифр числа: " + sum);
         System.out.println("Сумма нечётных цифр числа: " + sum1);
