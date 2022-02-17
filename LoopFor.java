@@ -5,7 +5,7 @@ public class LoopFor {
         System.out.print("Числа, кратные 4: ");
         for (int i = 100; i > 1; i--) {
             if (isMultipleFour(i)) {
-                System.out.print(i + ", ");
+                System.out.print(i + " ");
             }
         }
     }
